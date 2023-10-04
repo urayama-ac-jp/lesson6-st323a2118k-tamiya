@@ -13,7 +13,7 @@ public class Comment {
   private String content;
 
   // ↓アノテーションを追加してください↓
-
+  @NotEmpty(message = "メールアドレスを入力してください")
   // ↑アノテーションを追加してください↑
   @Email(message = "メールアドレスの形式ではありません")
   private String mail;
